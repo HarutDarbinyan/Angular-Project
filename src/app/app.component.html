@@ -1,0 +1,99 @@
+<h4>Ընտրեք թե որ թիմում եք ուզում ավելացնել խաղացող</h4>
+<select [(ngModel)]="anun1">
+    <option value="Barcelona" >Barcelona</option>
+    <option value="Real Madrid" >Real Madrid</option>
+    <option value="Juventus" >Juventus</option>
+    <input type="text">
+</select>
+<hr>
+<div class="form-inline">
+
+  <div class="form-group">
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="Անուն" [(ngModel)]="name4">
+    </div>
+  </div>
+  <div class="form-group">
+      <div class="col-md-4">
+        <input type="number" class="form-control" placeholder="Համար" [(ngModel)]="num">
+      </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="Դիրք" [(ngModel)]="dirq">
+        </div>
+      </div>
+
+          <div class="col-md-4">
+           <button class="btn btn-danger" (click)=addItem(name4,num,dirq,anun1)>Ավելացնել</button>
+          </div>
+
+
+</div>
+
+
+
+
+
+
+<div class="container-fluid">
+  <div class="row Tab">
+    <div class="col-md-3 Barca">
+     <h2>Barcelona</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <td>Անուն</td>
+            <td>Համար</td>
+            <td>Դիրք</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of items1">
+            <td>{{item.name4}}</td>
+            <td>{{item.num}}</td>
+            <td>{{item.dirq}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-3 Real">
+        <h2>Real Madrid</h2>
+         <table class="table table-striped">
+           <thead>
+             <tr>
+               <td>Անուն</td>
+               <td>Համար</td>
+               <td>Դիրք</td>
+             </tr>
+           </thead>
+           <tbody>
+              <tr *ngFor="let item of items2">
+                <td>{{item.name4}}</td>
+                <td>{{item.num}}</td>
+                <td>{{item.dirq}}</td>
+              </tr>
+            </tbody>
+         </table>
+       </div>
+       <div class="col-md-3 Juv">
+          <h2>Juventus</h2>
+           <table class="table table-striped">
+             <thead>
+               <tr>
+                 <td>Անուն</td>
+                 <td>Համար</td>
+                 <td>Դիրք</td>
+               </tr>
+             </thead>
+             <tbody>
+                <tr *ngFor="let item of items3">
+                  <td>{{item.name4}}</td>
+                  <td>{{item.num}}</td>
+                  <td>{{item.dirq}}</td>
+                </tr>
+              </tbody>
+           </table>
+         </div>
+  </div>
+</div>

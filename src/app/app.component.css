@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+h2{
+  text-align: center;
+  color: #fff;
+}
+.Tab{
+  margin-top: 50px;
+}
+.Barca{
+  height: 100%;
+  background-image: url(../../image/Barcelona-Wallpaper-Logo.jpg);
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
+}
+.Real{
+  height: 100%;
+  background-image: url(../../image/DSC100577783.jpg);
+  background-size: 100%;
+  /* background-repeat: no-repeat; */
+}
+.Juv{
+  height: 100%;
+  background-image: url(../../image/384157.jpg);
+  background-size: 100%;
+}
+.table{
+  color:#fff;
+}
